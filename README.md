@@ -257,7 +257,3 @@ Failed to find the receiver's message queue: No such file or directory
 ## Conclusion
 
 This chat application demonstrates the fundamentals of inter-process communication using message queues in C. While simple in design, it effectively shows how processes can communicate asynchronously through the kernel. The code provides a solid foundation for understanding IPC mechanisms and can be extended to create more sophisticated communication systems.
-
----
-
-**Note**: The application uses System V message queues which are persistent until explicitly removed or the system reboots. Always ensure proper cleanup by typing 'quit' in the sender program or manually removing the message queues using `ipcrm` commands if needed.
